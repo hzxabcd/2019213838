@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页</title>
+    <link>
+    <style>
+        * {
+            border: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: teal;
+        }
+        
+        h1 {
+            text-align: center;
+            font-weight: 400;
+            text-shadow: 5px 5px 5px gray;
+        }
+        
+        .title {
+            color: rgb(247 131 12);
+            background-color: beige;
+            border: rgb(242 147 29) solid 3px;
+            border-radius: 6px;
+            width: 180px;
+            height: 50px;
+            margin: 50px auto;
+        }
+        
+        .container {
+            min-height: 800px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 500px);
+            grid-template-rows: repeat(auto-fill, 450px);
+            justify-content: space-evenly;
+            align-content: space-around;
+            margin-top: 20px;
+            gap: 25px;
+        }
+        
+        .head {
+            min-height: 400px;
+            display: grid;
+            margin-top: 150px;
+            margin-left: 400px;
+            grid-template-columns: repeat(auto-fill, 500px);
+            margin-bottom: 50px;
+        }
+        /* .head .left {
+            background-color: aqua;
+        } */
+        
+        .head .left img {
+            border-radius: 50%;
+        }
+        
+        .head .right {
+            background-color: rgba(0, 255, 255, 0.651);
+            border-radius: 10%;
+            padding: 30px 30px;
+            color: white;
+        }
+        
+        p {
+            font-size: 30px;
+            color: turquoise;
+            padding-left: 30px;
+        }
+        
+        .container .item {
+            background-color: white;
+            padding: 10px;
+            /* display: flex; */
+            display: grid;
+            flex-flow: column nowrap;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 10px;
+        }
+        
+        .container .item:hover {
+            width: calc(100%*1.02);
+            box-shadow: 0 0 10px lightgrey;
+            background-color: wheat;
+        }
+        
+        .container .item a:hover {
+            color: red;
+        }
+        
+        .container .item img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="title">个人主页</h1>
+    <div class="head">
+        <div class="left">
+            <img src="images/g4.jpg" alt="">
+        </div>
+        <div class="right">
+            <h1>姓名：黄xx</h1>
+            <h2>性别：男</h2>
+            <h2>年龄：18</h2>
+            <h3>学校：华中师范大学</h3>
+            <h3>学院：计算机学院</h3>
+            <h3>班级：2021</h3>
+
+
+        </div>
+    </div>
+
+    <p>个人经历</p>
+    <hr align=center width=1800 color=#00d3d3 size=10px>
+    <div class="container">
+        <div class="item">
+            <img src="images/g8.jpg" alt="">
+            <a href="#">2021-1-13</a>
+            <text>摄影</text>
+        </div>
+        <div class="item">
+            <img src="images/g9.jpg" alt="">
+            <a href="#">2021-2-11</a>
+            <text>骑行</text>
+        </div>
+        <div class="item">
+            <img src="images/g10.jpg" alt="">
+            <a href="#">2021-2-28</a>
+            <text>聚会</text>
+        </div>
+
+        <div class="item">
+            <img src="images/g5.jpg" alt="">
+            <a href="#">2021-4-22</a>
+            <text>美食</text>
+        </div>
+        <div class="item">
+            <img src="images/g6.jpg" alt="">
+            <a href="#">2021-5-5</a>
+            <text>滑雪</text>
+        </div>
+        <div class="item">
+            <img src="images/g7.jpg" alt="">
+            <a href="#">2021-6-19</a>
+            <text>野营</text>
+        </div>
+    </div>
+
+
+    <p>学习实践</p>
+    <hr align=center width=1800 color=#00d3d3 size=10px>
+
+    <div class="container">
+
+        <div class="item">
+            <img src="images/h1.jpg" alt="">
+            <a href="#">学习途径：中国大学mooc</a>
+            <text>Java</text>
+        </div>
+        <div class="item bgimg">
+            <img src="images/h2.jpg" alt="">
+            <a href="#">学习途径：B站</a>
+            <text>C语言</text>
+        </div>
+        <div class="item">
+            <img src="images/h3.jpg" alt="">
+            <a href="#">学习途径：中国大学mooc</a>
+            <text>Python</text>
+        </div>
+    </div>
+</body>
+
+</html>
