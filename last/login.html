@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>用户登录</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="./js/vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <div class="login">
+            <h2>用户登录</h2>
+            <div class="login_box">
+                <!-- required就是不能为空 必须在css效果中有很大的作用 -->
+                <!-- 可以简写为required -->
+                <input type="text" required v-model='uname' /><label>用户名</label>
+            </div>
+            <div class="login_box">
+                <input type="password" required="required" v-model='password' /><label>密码</label>
+            </div>
+            <a :href="url" @click='login'>
+				登录
+			</a>
+            <a href="javascript:void(0)">
+				注册
+			</a>
+        </div>
+    </div>
+</body>
+
+<script>
+    var vm = new Vue({ // 创建一个Vue的实例，这个实例接收一些配置项
+        el: "#app", // el 配置项指实例负责管理的区域； #app 指 id="app" 的dom标签里的所有内容（只对其有效）
+        data: {
+            uname: '',
+            password: "",
+            url: ''
+        },
+        methods: {
+            login() {
+                if (this.unmae != '' && this.password != '') {
+                    this.url = './index.html'
+                } else {
+                    alert('用户名或者密码不能为空!');
+                }
+            }
+        }
+    })
+</script>
+
+</html>

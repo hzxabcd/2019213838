@@ -1,0 +1,11 @@
+.home-tool-bar{
+    position: fixed;
+    bottom: 70px;
+    right: 0;
+    z-index: 99;
+}
+
+.home-tool-bar .item{ 
+    width: 80px; height: 80px; border: 1px #ccc solid; text-align: center;line-height: 30px;}
+.home-tool-bar .item .icon{font-size: 20px;}
+
